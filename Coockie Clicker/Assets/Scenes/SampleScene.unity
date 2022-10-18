@@ -336,7 +336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122426708}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.03, y: 0.05, z: -13.85}
+  m_LocalPosition: {x: -0.03, y: 0.05, z: -14.59}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -848,7 +848,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413058672}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -7.5}
+  m_LocalPosition: {x: 0, y: 0, z: -9.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -942,7 +942,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489526202}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0169, y: -0.0679, z: -9}
+  m_LocalPosition: {x: 0.0169, y: -0.0679, z: -12.24}
   m_LocalScale: {x: 0.44811398, y: 0.4, z: -0.27945232}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1002,7 +1002,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.5
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1150,7 +1150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &807840810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,7 +1407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -4.4}
+  m_AnchoredPosition: {x: 0, y: -5.43}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464173641
@@ -1805,6 +1805,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1581475768}
   - component: {fileID: 1581475769}
+  - component: {fileID: 1581475770}
+  - component: {fileID: 1581475771}
   m_Layer: 0
   m_Name: GerenciadorDoJogo
   m_TagString: Untagged
@@ -1847,6 +1849,38 @@ MonoBehaviour:
   migalhaPosicao: {fileID: 681512645}
   menuItem: {fileID: 1566854971}
   menuAlternarIcone: {fileID: 1886752997}
+  interstitialAdExample: {fileID: 1581475771}
+--- !u!114 &1581475770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581475767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95af46a8f938884385eea84f01f460c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidGameId: 4978237
+  _IOsGameId: 4978236
+  _testMode: 1
+  _enablePerPlacementMode: 1
+  interstitialAdExample: {fileID: 1581475771}
+--- !u!114 &1581475771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581475767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd7de82d997e0d47ad5824aa06c42a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidUnityId: Interstitial_Android
+  _iosAdUnityId: Interstitial_iOS
 --- !u!1 &1764872687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,7 +2495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139054986}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -14.07}
+  m_LocalPosition: {x: 0, y: 0, z: -14.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

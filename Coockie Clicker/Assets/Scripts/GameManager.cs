@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject menuItem;
     public TextMeshProUGUI menuAlternarIcone;
 
+    public InterstitialAdExample interstitialAdExample;
+
     //Instancia os objetos criados
     public void GerarCookie(GameObject cookie)
     {
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
     // Não é o lugar ideal, melhor fazer no MenuManager, mas para um projeto exemplo está de bom tamanho
     public void AlternarMenu()
     {
+
         if (menuItem.activeSelf)
         {
             menuItem.SetActive(false);
@@ -35,6 +38,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            interstitialAdExample.LoadAd();
+            interstitialAdExample.ShowAd();
             menuItem.SetActive(true);
             menuAlternarIcone.text = "X";
         }
