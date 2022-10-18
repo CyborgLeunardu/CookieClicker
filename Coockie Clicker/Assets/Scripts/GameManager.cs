@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public Cookie cookieGerado;
     public Transform migalhaPosicao;
 
+    public GameObject menuItem;
+    public TextMeshProUGUI menuAlternarIcone;
+
     //Instancia os objetos criados
     public void GerarCookie(GameObject cookie)
     {
@@ -20,6 +23,21 @@ public class GameManager : MonoBehaviour
         //Resolução:
         cookieGerado = Instantiate(cookie, cookiePosicao.position, cookiePosicao.rotation).GetComponent<Cookie>();
 
+    }
+
+    // Não é o lugar ideal, melhor fazer no MenuManager, mas para um projeto exemplo está de bom tamanho
+    public void AlternarMenu()
+    {
+        if (menuItem.activeSelf)
+        {
+            menuItem.SetActive(false);
+            menuAlternarIcone.text = "+";
+        }
+        else
+        {
+            menuItem.SetActive(true);
+            menuAlternarIcone.text = "X";
+        }
     }
 
     //Método para contar número de clicks
